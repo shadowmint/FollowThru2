@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_pledge.v_user_data_id %>
+</p>
+
+<p>
+  <b>V project:</b>
+  <%= @v_pledge.v_project_id %>
+</p>
+
+<p>
+  <b>V pledge type:</b>
+  <%= @v_pledge.v_pledge_type_id %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @v_pledge.amount %>
+</p>
+
+<p>
+  <b>Reminder:</b>
+  <%= @v_pledge.reminder %>
+</p>
+
+<p>
+  <b>Cancelled:</b>
+  <%= @v_pledge.cancelled %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_pledge_path(@v_pledge) %> |
+<%= link_to 'Back', v_pledges_path %>

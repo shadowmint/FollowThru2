@@ -1,0 +1,31 @@
+<h1>Listing v_pledge_types</h1>
+
+<table>
+  <tr>
+    <th>V user data</th>
+    <th>Name</th>
+    <th>Desc</th>
+    <th>Cost</th>
+    <th>V asset</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @v_pledge_types.each do |v_pledge_type| %>
+  <tr>
+    <td><%= v_pledge_type.v_user_data_id %></td>
+    <td><%= v_pledge_type.name %></td>
+    <td><%= v_pledge_type.desc %></td>
+    <td><%= v_pledge_type.cost %></td>
+    <td><%= v_pledge_type.v_asset_id %></td>
+    <td><%= link_to 'Show', v_pledge_type %></td>
+    <td><%= link_to 'Edit', edit_v_pledge_type_path(v_pledge_type) %></td>
+    <td><%= link_to 'Destroy', v_pledge_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New V pledge type', new_v_pledge_type_path %>

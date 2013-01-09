@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_payment_type.v_user_data_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @v_payment_type.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_payment_type_path(@v_payment_type) %> |
+<%= link_to 'Back', v_payment_types_path %>

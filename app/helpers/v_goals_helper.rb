@@ -1,0 +1,2 @@
+module VGoalsHelper
+end

@@ -1,0 +1,33 @@
+<h1>Listing v_pledges</h1>
+
+<table>
+  <tr>
+    <th>V user data</th>
+    <th>V project</th>
+    <th>V pledge type</th>
+    <th>Amount</th>
+    <th>Reminder</th>
+    <th>Cancelled</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @v_pledges.each do |v_pledge| %>
+  <tr>
+    <td><%= v_pledge.v_user_data_id %></td>
+    <td><%= v_pledge.v_project_id %></td>
+    <td><%= v_pledge.v_pledge_type_id %></td>
+    <td><%= v_pledge.amount %></td>
+    <td><%= v_pledge.reminder %></td>
+    <td><%= v_pledge.cancelled %></td>
+    <td><%= link_to 'Show', v_pledge %></td>
+    <td><%= link_to 'Edit', edit_v_pledge_path(v_pledge) %></td>
+    <td><%= link_to 'Destroy', v_pledge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New V pledge', new_v_pledge_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_goal.v_user_data_id %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @v_goal.cost %>
+</p>
+
+<p>
+  <b>V pledge type:</b>
+  <%= @v_goal.v_pledge_type_id %>
+</p>
+
+<p>
+  <b>Count:</b>
+  <%= @v_goal.count %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_goal_path(@v_goal) %> |
+<%= link_to 'Back', v_goals_path %>

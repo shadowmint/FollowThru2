@@ -1,0 +1,33 @@
+<%= form_for(@v_goal) do |f| %>
+  <% if @v_goal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@v_goal.errors.count, "error") %> prohibited this v_goal from being saved:</h2>
+
+      <ul>
+      <% @v_goal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :v_user_data_id %><br />
+    <%= f.number_field :v_user_data_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :v_pledge_type_id %><br />
+    <%= f.number_field :v_pledge_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :count %><br />
+    <%= f.number_field :count %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

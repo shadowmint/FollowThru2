@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_payment.v_user_data_id %>
+</p>
+
+<p>
+  <b>V pledge:</b>
+  <%= @v_payment.v_pledge_id %>
+</p>
+
+<p>
+  <b>V project:</b>
+  <%= @v_payment.v_project_id %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @v_payment.amount %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @v_payment.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_payment_path(@v_payment) %> |
+<%= link_to 'Back', v_payments_path %>

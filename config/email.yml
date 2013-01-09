@@ -1,0 +1,14 @@
+development:
+  :address: mail.iinet.net.au
+  :port: 25
+  :authentication: plain
+  :user_name: followthru
+  :password: 15789633aA
+  :enable_starttls_auto: true
+production:
+  :address: smtp.gmail.com
+  :port: 587
+  :authentication: plain
+  :user_name: xxx
+  :password: yyy
+  :enable_starttls_auto: true

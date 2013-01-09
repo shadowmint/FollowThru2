@@ -1,0 +1,9 @@
+rails generate scaffold VUserData user_id:integer --force-plural
+rails generate scaffold VAsset v_user_data_id:integer id:string path:string
+rails generate scaffold VPledgeType v_user_data_id:integer name:string desc:string cost:decimal v_asset_id:integer
+rails generate scaffold VGoal v_user_data_id:integer cost:decimal v_pledge_type_id:integer count:integer
+rails generate scaffold VStatus v_user_data_id:integer start_time:datetime end_time:datetime status:integer cost_total:decimal cost_progress:decimal cost_status:decimal items_total:integer items_progress:integer items_status:decimal 
+rails generate scaffold VPayment v_user_data_id:integer v_pledge_id:integer v_project_id:integer amount:decimal date:datetime
+rails generate scaffold VPledge v_user_data_id:integer v_project_id:integer v_pledge_type_id:integer amount:decimal reminder:integer cancelled:boolean
+rails generate scaffold VProject v_user_data_id:integer name:string desc:string v_asset_id:integer
+rails generate scaffold VPaymentType v_user_data_id:integer name:string

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_asset.v_user_data_id %>
+</p>
+
+<p>
+  <b>Id:</b>
+  <%= @v_asset.id %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @v_asset.path %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_asset_path(@v_asset) %> |
+<%= link_to 'Back', v_assets_path %>

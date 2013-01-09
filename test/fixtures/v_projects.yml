@@ -1,0 +1,7 @@
+hello_world:
+  id: 1
+  v_user_data_id: 1
+  name: Hello World
+  desc: Sample project
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

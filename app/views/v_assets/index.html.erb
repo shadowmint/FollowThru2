@@ -1,0 +1,27 @@
+<h1>Listing v_assets</h1>
+
+<table>
+  <tr>
+    <th>V user data</th>
+    <th>Id</th>
+    <th>Path</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @v_assets.each do |v_asset| %>
+  <tr>
+    <td><%= v_asset.v_user_data_id %></td>
+    <td><%= v_asset.id %></td>
+    <td><%= v_asset.path %></td>
+    <td><%= link_to 'Show', v_asset %></td>
+    <td><%= link_to 'Edit', edit_v_asset_path(v_asset) %></td>
+    <td><%= link_to 'Destroy', v_asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New V asset', new_v_asset_path %>

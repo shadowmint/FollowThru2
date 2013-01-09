@@ -1,0 +1,41 @@
+<h1>Listing v_statuses</h1>
+
+<table>
+  <tr>
+    <th>V user data</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Status</th>
+    <th>Cost total</th>
+    <th>Cost progress</th>
+    <th>Cost status</th>
+    <th>Items total</th>
+    <th>Items progress</th>
+    <th>Items status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @v_statuses.each do |v_status| %>
+  <tr>
+    <td><%= v_status.v_user_data_id %></td>
+    <td><%= v_status.start_time %></td>
+    <td><%= v_status.end_time %></td>
+    <td><%= v_status.status %></td>
+    <td><%= v_status.cost_total %></td>
+    <td><%= v_status.cost_progress %></td>
+    <td><%= v_status.cost_status %></td>
+    <td><%= v_status.items_total %></td>
+    <td><%= v_status.items_progress %></td>
+    <td><%= v_status.items_status %></td>
+    <td><%= link_to 'Show', v_status %></td>
+    <td><%= link_to 'Edit', edit_v_status_path(v_status) %></td>
+    <td><%= link_to 'Destroy', v_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New V status', new_v_status_path %>

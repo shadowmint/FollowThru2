@@ -1,0 +1,5 @@
+- Update project controller to make data user bound
+- Remove non-ajax views for controller
+- Create controller 'form' action 
+- Create angular js bindings for project
+- Implement 'form' to allow projects to be created

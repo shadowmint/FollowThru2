@@ -1,0 +1,27 @@
+Image upload strategy:
+
+  1) Everything is public, stored in /public/ but the path to an image is controlled by private hashed key.
+
+  2) The path to a file is stored in the database.
+
+Downside:
+
+  Everything is public, sharing the link to an images defeats lightweight access control on per-user-basic.
+
+  - On the other hand, none of the data here is really 'super private' and guessing a long-hash
+    is about as likely as guessing a password; ie. impossible. So once an image is 'public' it
+    is basically public to everyone; this is acceptable.
+
+
+  Deleting files requires the extra step of deleting the actual object on the file system.
+
+  - Not really a big deal.
+
+
+Upside:
+
+  Easy
+
+  Fast
+  
+  Plugable to other storage solutions (S3)

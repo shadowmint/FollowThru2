@@ -1,0 +1,29 @@
+<h1>Listing v_goals</h1>
+
+<table>
+  <tr>
+    <th>V user data</th>
+    <th>Cost</th>
+    <th>V pledge type</th>
+    <th>Count</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @v_goals.each do |v_goal| %>
+  <tr>
+    <td><%= v_goal.v_user_data_id %></td>
+    <td><%= v_goal.cost %></td>
+    <td><%= v_goal.v_pledge_type_id %></td>
+    <td><%= v_goal.count %></td>
+    <td><%= link_to 'Show', v_goal %></td>
+    <td><%= link_to 'Edit', edit_v_goal_path(v_goal) %></td>
+    <td><%= link_to 'Destroy', v_goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New V goal', new_v_goal_path %>

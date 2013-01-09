@@ -1,0 +1,2 @@
+module VPaymentsHelper
+end

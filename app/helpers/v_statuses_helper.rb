@@ -1,0 +1,2 @@
+module VStatusesHelper
+end

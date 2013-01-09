@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_status.v_user_data_id %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @v_status.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @v_status.end_time %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @v_status.status %>
+</p>
+
+<p>
+  <b>Cost total:</b>
+  <%= @v_status.cost_total %>
+</p>
+
+<p>
+  <b>Cost progress:</b>
+  <%= @v_status.cost_progress %>
+</p>
+
+<p>
+  <b>Cost status:</b>
+  <%= @v_status.cost_status %>
+</p>
+
+<p>
+  <b>Items total:</b>
+  <%= @v_status.items_total %>
+</p>
+
+<p>
+  <b>Items progress:</b>
+  <%= @v_status.items_progress %>
+</p>
+
+<p>
+  <b>Items status:</b>
+  <%= @v_status.items_status %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_status_path(@v_status) %> |
+<%= link_to 'Back', v_statuses_path %>

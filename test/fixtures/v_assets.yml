@@ -1,0 +1,7 @@
+sample_asset_0:
+  id: 1
+  v_user_data_id: 1
+  v_project_id: 1
+  path: /home/ninjas
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

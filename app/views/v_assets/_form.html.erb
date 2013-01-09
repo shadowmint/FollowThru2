@@ -1,0 +1,20 @@
+<%= form_for(@v_asset) do |f| %>
+  <% if @v_asset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@v_asset.errors.count, "error") %> prohibited this v_asset from being saved:</h2>
+
+      <ul>
+      <% @v_asset.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

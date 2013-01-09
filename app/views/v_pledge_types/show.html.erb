@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V user data:</b>
+  <%= @v_pledge_type.v_user_data_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @v_pledge_type.name %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @v_pledge_type.desc %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @v_pledge_type.cost %>
+</p>
+
+<p>
+  <b>V asset:</b>
+  <%= @v_pledge_type.v_asset_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_v_pledge_type_path(@v_pledge_type) %> |
+<%= link_to 'Back', v_pledge_types_path %>

@@ -1,0 +1,57 @@
+<%= form_for(@v_status) do |f| %>
+  <% if @v_status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@v_status.errors.count, "error") %> prohibited this v_status from being saved:</h2>
+
+      <ul>
+      <% @v_status.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :v_user_data_id %><br />
+    <%= f.number_field :v_user_data_id %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.datetime_select :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= f.datetime_select :end_time %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_total %><br />
+    <%= f.text_field :cost_total %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_progress %><br />
+    <%= f.text_field :cost_progress %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_status %><br />
+    <%= f.text_field :cost_status %>
+  </div>
+  <div class="field">
+    <%= f.label :items_total %><br />
+    <%= f.number_field :items_total %>
+  </div>
+  <div class="field">
+    <%= f.label :items_progress %><br />
+    <%= f.number_field :items_progress %>
+  </div>
+  <div class="field">
+    <%= f.label :items_status %><br />
+    <%= f.text_field :items_status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
